@@ -1,7 +1,15 @@
 Titanic Dataset Preprocessing
 
-This project demonstrates how to preprocess the Titanic dataset for machine learning tasks. The dataset is cleaned by handling missing values—filling Age with the median,
-Embarked with the mode, and dropping Cabin due to excessive missing data. Categorical features like Sex and Embarked are encoded using one-hot encoding, and numerical columns 
-(Age, Fare, SibSp, Parch) are standardized with StandardScaler. Outliers are visualized with boxplots and removed using the IQR method to ensure data quality.
-The final dataset is fully numeric, cleaned, and ready for modeling. The project uses Python with libraries such as pandas, numpy, matplotlib, seaborn, and scikit-learn.
+This project demonstrates the preprocessing of the Titanic dataset to prepare it for machine learning. The steps followed include:
 
+Importing the dataset and exploring basic information such as data types and missing values.
+
+Handling missing data by filling the 'Age' column with the median, filling 'Embarked' with the most frequent value, and dropping the 'Cabin' column due to excessive missing values.
+
+Converting categorical features like 'Sex' and 'Embarked' into numerical format using one-hot encoding.
+
+Normalizing numerical features such as 'Age', 'Fare', 'SibSp', and 'Parch' using standard scaling to ensure all features are on a similar scale.
+
+Visualizing outliers using boxplots and removing them based on the IQR (Interquartile Range) method.
+
+After completing these steps, the dataset is clean, fully numeric, and ready for machine learning models. The preprocessing is done using Python with libraries such as pandas, numpy, seaborn, matplotlib, and scikit-learn.
